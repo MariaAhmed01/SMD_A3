@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">assignment3_take2</string>
+    <string name="profile_title">Profile</string>
+
 </resources>
