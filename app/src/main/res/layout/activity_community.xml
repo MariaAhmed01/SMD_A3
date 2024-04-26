@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/community_activity"
+    android:layout_height="match_parent"
+    tools:context=".CommunityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/flippedrectangle"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:background="@drawable/backarrow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="start"/>
+
+
+                <!-- Pushes the call and video icons to the right -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="end"/>
+
+                <Button
+                    android:id="@+id/callicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/callicon"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/videoicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/videocam"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginEnd="10dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Cooper's"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Community"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/group1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:text="How was your experience with his
+mentorship? Satisfied??"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#B6ECE7"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:30"
+                android:textColor="#808080"
+                android:textSize="10sp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="right"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/circle"
+                    app:tint="#157177"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Worth it!!"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/whitebox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30"
+                    android:textColor="#808080"
+                    android:textSize="10sp"
+                    android:layout_marginStart="-70dp"
+                    android:layout_gravity="left|bottom"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/circle"
+                    app:tint="#DEADEE"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impressive"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/whitebox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30"
+                    android:textColor="#808080"
+                    android:textSize="10sp"
+                    android:layout_marginStart="-80dp"
+                    android:layout_gravity="left|bottom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="20dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/pfp3"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You’re missing out! Go take it!!!"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/whitebox"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30"
+                    android:textColor="#808080"
+                    android:textSize="10sp"
+                    android:layout_marginStart="-200dp"
+                    android:layout_gravity="left|bottom"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="80dp"
+        android:background="@drawable/whitebox"
+        android:backgroundTint="#50C2C9"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attach_file"
+            android:paddingTop="20dp"
+            app:tint="@color/white"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery"
+            android:paddingTop="20dp"
+            app:tint="@color/white"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type something ..."
+            android:textColor="#FFFFFF"
+            android:background="@null"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:textColorHint="#FFFFFF"
+            android:gravity="top"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="end"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:paddingTop="20dp"
+            app:tint="@color/white"
+            android:layout_gravity="right"
+            android:onClick="camera"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mic"
+            android:paddingTop="20dp"
+            app:tint="@color/white"
+            android:layout_gravity="right"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:paddingTop="20dp"
+            app:tint="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

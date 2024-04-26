@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookAppointmentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/flippedrectangle"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            >
+
+
+            <ImageButton
+                android:id="@+id/backarrow"
+                android:background="@drawable/backarrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Book your Session"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#157177"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="John Cooper"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pfp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/whitebox"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$1500/Session"
+                    android:textColor="#FFC90A"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                android:layout_marginStart="10dp"
+                >
+
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/chaticon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    />
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/call"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                />
+                <Button
+                    android:id="@+id/videocall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/videocall"
+                    android:layout_alignEnd="@+id/call"
+                    />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <CalendarView
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:firstDayOfWeek="2"
+            android:weekDayTextAppearance="@style/Widget.MaterialComponents.TimePicker"
+             />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Time Slots"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#D9D9D9"
+                android:text="10.00 AM"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_marginEnd="15dp"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#0B8FAC"
+                android:text="11.00 AM"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_marginEnd="15dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#D9D9D9"
+                android:text="12.00 AM"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_marginEnd="15dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="20dp"
+            >
+
+            <Button
+                android:id="@+id/bookappoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#157177"
+                android:text="Book an Appointment"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>

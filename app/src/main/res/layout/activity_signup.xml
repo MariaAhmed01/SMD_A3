@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F3"
+    tools:context=".SignupActivity">
+
+    <!-- overlapping circles -->
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="-96dp"
+        android:layout_marginTop="0dp" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-96dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/appname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ciabatta"
+                android:inputType="text"
+                android:text="mentor"
+                android:textColor="#26979F"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/appname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ciabatta"
+                android:inputType="text"
+                android:text="me"
+                android:textColor="#FFC90A"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Get Started!"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Name"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:hint="Enter Name"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Email"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact Number"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:hint="Enter Contact Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Country"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/whitebox"
+                        android:spinnerMode="dropdown"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/dropdown1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignEnd="@id/country"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/dropdown"
+                        android:alpha="0.5"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="City"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:background="@drawable/whitebox"
+                        android:spinnerMode="dropdown"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <ImageView
+                        android:id="@+id/dropdown2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignEnd="@id/city"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/dropdown"
+                        android:alpha="0.5"
+                        />
+
+            </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Password"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/whitebox"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Password must be at least 8 chracters long"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    tools:ignore="TouchTargetSizeCheck"
+                    />
+
+                <Button
+                    android:id="@+id/signupbtn"
+                    android:layout_width="175dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/whitebox"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="Signup"
+                    android:textColor="#50C2C9"
+                    android:textAllCaps="false"
+                    tools:ignore="TouchTargetSizeCheck"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:text="Already have an account?"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:text="Login"
+                        android:textColor="#1A787E"
+                        android:textSize="10sp"
+                        android:onClick="login"
+                        tools:ignore="TouchTargetSizeCheck"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:background="@drawable/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textColor="#157177"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Community"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            >
+
+            <!-- Inner LinearLayout (can be omitted if not needed) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/group1"
+                    android:layout_marginEnd="20dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/group2"
+                    android:layout_marginEnd="20dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/group3"
+                    android:layout_marginEnd="20dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/group4"
+                    android:layout_marginEnd="20dp"/>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/group5"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Messages"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/johnchat"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/chat1"
+            android:layout_margin="15dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/flippedrectangle"
+            android:background="#50C2C9"/>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chat2"
+            android:layout_margin="15dp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/flippedrectangle"
+            android:background="#50C2C9"/>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chat3"
+            android:layout_margin="15dp"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

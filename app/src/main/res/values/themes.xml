@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+    <style name="Base.Theme.Assignment3_take2" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your light theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowBackground">#DEF8F8</item>
+
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Assignment3_take2" parent="Base.Theme.Assignment3_take2" />
+</resources>

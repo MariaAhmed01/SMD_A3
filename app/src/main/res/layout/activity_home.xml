@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF8F8"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="-96dp"
+        android:layout_marginTop="0dp" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-96dp"
+        android:alpha="0.2"
+        android:src="@drawable/circle"
+        app:layout_anchor="@+id/circle2"
+        app:layout_anchorGravity="start|center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ScrollView to make the content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_above="@id/bar"
+        app:layout_constraintBottom_toTopOf="@id/bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="?android:attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingStart="20dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textHello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, "
+                    android:textColor="#000000"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textHello"
+                    android:text="Ali"
+                    android:textColor="#157177"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/notif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="25dp"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@drawable/notification"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready for mentorship? Let’s begin the journey!"
+                android:textColor="#157177"
+                android:textSize="15sp"
+                android:paddingTop="5sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/whitebox"
+                        android:backgroundTint="#157177"
+                        android:text="All"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/whitebox"
+                        android:backgroundTint="#BCE1E2"
+                        android:text="Education"
+                        android:textColor="#157177"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/whitebox"
+                        android:backgroundTint="#BCE1E2"
+                        android:text="Entrepreneurship"
+                        android:textColor="#157177"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/whitebox"
+                        android:backgroundTint="#BCE1E2"
+                        android:text="Personal Growth"
+                        android:textColor="#157177"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="10dp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/whitebox"
+                        android:backgroundTint="#BCE1E2"
+                        android:text="Career"
+                        android:textColor="#157177"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Mentors for you"
+                    android:textColor="#157177"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="View All"
+                    android:textColor="#157177"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/mentorpage"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/topmentor1"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/topmentor2"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/topmentor3"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education Mentors"
+                    android:textColor="#157177"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="View All"
+                    android:textColor="#157177"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/edumentor1"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/edumentor2"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/edumentor3"
+                        />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Mentors"
+                    android:textColor="#157177"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="View All"
+                    android:textColor="#157177"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="20dp"
+                    />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="90dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/recentmentor1"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/recentmentor2"
+                        />
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/recentmentor3"
+                        />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

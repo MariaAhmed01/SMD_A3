@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MentorActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/flippedrectangle"
+        android:paddingBottom="30dp"
+        >
+
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:background="@drawable/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="start"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hi, I’m"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="John Cooper"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pfp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/whitebox"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="UX Designer at"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Google"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/whitebox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="About me"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="I am a passionate UX designer at Google with a focus on
+creating user-centric and intuitive interfaces. With 10 years of
+experience, I have had the opportunity to work on diverse
+projects that have shaped my understanding of design
+principles and user experience."
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+            android:lineSpacingMultiplier="1.5"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Expertise Include"
+            android:textColor="#157177"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#50C2C9"
+                android:text="Career Advice"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_marginEnd="15dp"
+                android:clickable="false"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#50C2C9"
+                android:text="User Experience Design"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:clickable="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#50C2C9"
+                android:text="Leadership"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:layout_marginEnd="15dp"
+                android:clickable="false"
+                />
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@drawable/whitebox"
+                android:backgroundTint="#50C2C9"
+                android:text="Prototyping"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:clickable="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/review"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/whitebox2"
+                android:backgroundTint="#FFC90A"
+                android:drawableEnd="@drawable/rate_review"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Drop a review "
+                android:textAllCaps="false"
+                android:textColor="#157177"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/community"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:drawableEnd="@drawable/people"
+                android:background="@drawable/whitebox2"
+                android:backgroundTint="#FFC90A"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Join Community "
+                android:textColor="#157177"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebox"
+            android:backgroundTint="#157177"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Book a Session"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

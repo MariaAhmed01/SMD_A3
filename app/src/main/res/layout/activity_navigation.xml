@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/navigation_activity"
+    android:background="#DEF8F8"
+    tools:context=".NavigationActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomnavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#FFFFFF"
+        app:fabCradleMargin="0dp"
+        app:contentInsetStart="0dp"
+        >
+
+        <!-- BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#157177"
+            app:menu="@menu/nav_bar"
+            app:itemIconTint="@drawable/item_nav"
+            app:itemTextColor="@drawable/item_nav"
+            app:labelVisibilityMode="labeled"
+
+            />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- Floating Action button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#157177"
+        android:tint="#FFFFFF"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bar"
+        app:srcCompat="@drawable/add_circle"
+        app:maxImageSize="40dp"
+        app:layout_anchorGravity="center_horizontal"
+        android:clickable="true"
+        app:elevation="0dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
