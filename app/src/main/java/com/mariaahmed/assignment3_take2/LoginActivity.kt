@@ -71,12 +71,14 @@ class LoginActivity : AppCompatActivity() {
         override fun onPostExecute(result: Boolean) {
             if (result) {
                 Toast.makeText(this@LoginActivity, "Login successful!", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+                val intent = Intent(this@LoginActivity, NavigationActivity::class.java)
+                intent.putExtra("loggedIn", true)
                 startActivity(intent)
             } else {
                 Toast.makeText(this@LoginActivity, "Login failed: Invalid credentials or error", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 
     fun signup(view: android.view.View) {

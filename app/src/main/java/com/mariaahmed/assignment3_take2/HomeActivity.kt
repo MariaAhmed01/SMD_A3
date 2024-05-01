@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.ImageButton
 
 class HomeActivity : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
     // Splash screen duration in milliseconds
-    private val SPLASH_DELAY: Long = 3000 // 3 seconds
+    private val SPLASH_DELAY: Long = 5000 // 3 seconds
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // Delayed navigation to HomeActivity
         Handler().postDelayed({
-            startActivity(Intent(this@MainActivity, ProfileActivity::class.java))
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
         }, SPLASH_DELAY)
     }
 }

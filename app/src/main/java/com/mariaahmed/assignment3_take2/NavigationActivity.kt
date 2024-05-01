@@ -1,5 +1,6 @@
 package com.mariaahmed.assignment3_take2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -48,6 +49,21 @@ class NavigationActivity : AppCompatActivity() {
             .commit()
     }
 
+
+    companion object {
+        fun switchFragment(activity: NavigationActivity, fragmentClass: Class<out Fragment>) {
+            val fragment = fragmentClass.newInstance()
+            activity.replaceFragment(fragment) // Assuming replaceFragment is defined
+        }
+    }
+
+
+    public fun switchFragment(fragmentClass: Class<out Fragment>) {
+        val fragment = fragmentClass.newInstance()
+        replaceFragment(fragment)
+    }
+
+
     fun switchHome() {
         replaceFragment(HomeActivity())
         binding.bottomnavigation.selectedItemId = R.id.navigation_home
@@ -59,6 +75,14 @@ class NavigationActivity : AppCompatActivity() {
 
     fun mentorChat() {
         replaceFragment(MentorChatActivity())
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        val loggedIn = intent?.getBooleanExtra("loggedIn", false) ?: false
+        if (loggedIn) {
+            replaceFragment(HomeActivity())
+        }
     }
 
 
